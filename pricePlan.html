@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all 0.2s ease;
+        }
+         body{
+            background: #ddd;
+         }
+        .plan{
+            width: 30%;
+            background: white;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 5px solid greenyellow;
+
+        }
+
+        .plan h3{
+            font-size: 2.5em;
+            font-weight: 700;
+            margin: 15px auto;
+        }
+        .plan .number{
+            font-size: 1.7em;
+            font-weight: 700;
+        }
+        h3 + p{
+            font-size: 1.7em;
+            padding: 20px 0;
+            border-bottom: 2px solid #ddd;
+            /* margin-bottom: 15px; */
+        }
+        .plan p:last-of-type{
+            font-size: 1.3em;
+            line-height: 1.5;
+            padding: 20px 0;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .plan ul{
+            list-style: none;
+            margin-bottom: 15px;
+        }
+        .plan ul li{
+            padding: 15px;
+            border-bottom: 1px dashed #ddd;
+            color: #666;
+        }
+        .plan ul li .fa-check{
+            color: limegreen;
+            margin-right: 15px;
+        }
+        .plan .cancled{
+            color: #ddd;
+        }
+        .plan ul li .fa-xmark{
+            margin-right: 15px;
+        }
+        .plan ul li:last-child{
+            border: none;
+        }
+        .btn{
+            background: limegreen;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            display: block;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="plan">
+        <h3>Basic</h3>
+        <p>
+            <sup>$</sup>
+            <span class="number">9</span>
+            <sub>/month</sub>
+        </p>
+        <p>Perfect for individuals getting started with our service.</p>
+        <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+               10GB Storage
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+               10GB Storage
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+               10GB Storage
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+               10GB Storage
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+               10GB Storage
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+               10GB Storage
+            </li>
+            <li class="cancled">
+              <i class="fa-solid fa-xmark"></i>
+               10GB Storage
+            </li>
+            <li class="cancled">
+              <i class="fa-solid fa-xmark"></i>
+               10GB Storage
+            </li>
+        </ul>
+        <a class="btn" href="#">Get started</a>
+    </div>
+</body>
+</html>
